@@ -1,4 +1,4 @@
-import NavBar from '../NavBar/NavBar';
+import NavBar from '../Header/Header';
 import Root from '../Root/Root';
 import Content  from '../Content/Content';
 import Header from '../Header/Header';
@@ -8,6 +8,9 @@ import ProductCategory from '../ProductCategory/ProductCategory';
 
 //Import Route
 import {RouterProvider, Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+
+//Css
+import '../../index.css';
 
 function App() {
 
