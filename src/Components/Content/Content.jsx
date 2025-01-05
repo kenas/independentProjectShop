@@ -1,8 +1,8 @@
 import Header  from "../Header/Header";
-const Content = () => {
+const Content = ({pictures}) => {
     return (
         <>
-        <Header />
+        <Header pictures={pictures}/>
         <p>Contnet</p>
         </>
     )
