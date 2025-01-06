@@ -29,7 +29,6 @@
 
 .navBarLinksContainer a:hover {
     border-bottom: 2px solid  var(--accentColorSecond);
-    transition: transform 0.5s ease-in-out;
 }
 
 .navBarLinksContainer > li:nth-last-child(1) > a:hover {
