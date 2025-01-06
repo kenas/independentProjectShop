@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: space-between;
     margin: auto 4rem;
-   
 }
 
 .navBarLogoContainer {
@@ -19,18 +18,36 @@
 
 .navBarLinksContainer > li {
     list-style: none;
+    margin: 1.5rem;
 }
-.navBarLinksContainer > li > a {
-    padding: 1.5rem;
+.navBarLinksContainer a {
+    padding-bottom: 3px;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--accentColor);
 }
 
+.navBarLinksContainer a:hover {
+    border-bottom: 2px solid  var(--accentColorSecond);
+    transition: transform 0.5s ease-in-out;
+}
+
+.navBarLinksContainer > li:nth-last-child(1) > a:hover {
+    border-bottom: none;
+}
+
+.navBarLinksContainer > li:nth-last-child(2) > a:hover{
+    border-bottom: none;
+
+}
+.navBarLinksContainer a.active{
+    border-bottom: 2px solid  var(--accentColorSecond);
+}
+
 .counter {
     position: absolute;
     right: 181px;
-    top: 8px;
+    top: 16px;
     background-color: #F73838;
     border-radius: 50%;
     color: white;
@@ -65,8 +82,4 @@ button {
     text-transform: uppercase;
     padding: 0.8rem 1.437rem;
     border-radius: 0.187rem;
-}
-
-.navBarLinksContainer li a.active{
-    border-bottom: 2px solid  var(--accentColorSecond);
 }
