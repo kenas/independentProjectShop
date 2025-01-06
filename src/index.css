@@ -12,4 +12,5 @@
 :root {
     --accentColor: hsl(195, 17%, 23%);
     --accentColorSecond: hsl(37, 74%, 65%);
+    --geyForHeader: hsla(60, 0%, 92%, 0.5);
 }
