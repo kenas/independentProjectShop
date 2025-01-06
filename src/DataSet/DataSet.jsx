@@ -7,7 +7,7 @@ export const pictures = [
     { url: hero, 
       salesText: {
         title: 'Big Savings on All-Season Apparel – 30% Off!',
-        description: 'Stay stylish all year round! Grab your favorite all-season clothes for Him and Her at a flat 30% discount. Limited time offer!'
+        description: 'Stay stylish all year round! Grab your favorite all-season clothes for Him and Her at a flat 30% discount!'
       }
     },
     { url: hero2, 
