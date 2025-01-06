@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     margin: auto 4rem;
+    padding: 0.4rem 0rem;
 }
 
 .navBarLogoContainer {
@@ -46,7 +47,7 @@
 .counter {
     position: absolute;
     right: 181px;
-    top: 16px;
+    top: 21px;
     background-color: #F73838;
     border-radius: 50%;
     color: white;
