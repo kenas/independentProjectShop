@@ -36,11 +36,10 @@ function App() {
 
 
   return (
-    <>
-   
-      <RouterProvider router={router}/>
-      <Footer />
-      </>
+      <div className='mainContainer'>
+        <RouterProvider router={router}/>
+        <Footer />
+      </div>
 
   )
 }
