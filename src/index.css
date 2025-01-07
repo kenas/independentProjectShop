@@ -15,3 +15,13 @@
     --geyForHeader: hsla(60, 0%, 92%, 0.5);
     --differentColor: hsl(15, 38%, 78%);
 }
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "navbar"
+    "header";
+   
+}
