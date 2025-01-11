@@ -1,8 +1,10 @@
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: auto 5rem;
+    padding: 8.87rem 0rem;
+    border-top: 2px solid var(--geyForHeader);
 }
 
 footer.section, .categories {
@@ -32,4 +34,31 @@ footer.section, .categories li a:hover {
 
 footer.section, .payMethods ul {
     display: flex;
+}
+
+footer.section, .containerLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer.section, .containerLogo p {
+    font-size: 1.25rem;
+    color: var(--accentColor);
+}
+
+footer.section, .containerSub {
+    display: flex;
+}
+
+footer.section, .containerSub input {
+    border: none;
+    border-bottom: 1px solid var(--geyForHeader);
+    outline: none;
+}
+
+footer.section, .containerSub button {
+    background-color: white;
+    color: var(--accentColor);
+    border-bottom: 1px solid var(--geyForHeader);
 }
