@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+import {getAllProducts} from '../Services/API';
 import Root from '../Root/Root';
 import NavBar from '../Header/Header';
 import Header from '../Header/Header';
@@ -15,6 +17,14 @@ import '../../index.css';
 
 function App() {
 
+   const [products, setProducts] = useState([]);
+
+   useEffect(() => {
+      getAllProducts().then(data => {
+          setProducts(data)
+      });
+    }, []);
+
   const router = createBrowserRouter(createRoutesFromElements([
     <Route path='/'  element={<Root />}>
 
@@ -24,9 +34,8 @@ function App() {
       <Route path='/'  element={<Header pictures={pictures}/>} />
 
       {/*I have to make sure the Contnet componnet is load for first land page and when the user click Home*/}
-      <Route index path='/'  element={<Content pictures={pictures}/>} />
-      <Route path='/home'  element={<Content pictures={pictures}/>} />
-
+      <Route index path='/'  element={<Content pictures={pictures} products={products}/>} />
+      <Route path='/home'  element={<Content pictures={pictures} products={products} />} />
       <Route path='/category/'  element={<ProductCategory />}/>
       <Route path='/category/:cat'  element={<ProductCategory />}/>
       <Route path='*' element={<PageNotFound />}/>
@@ -38,7 +47,6 @@ function App() {
   return (
       <div className='mainContainer'>
         <RouterProvider router={router}/>
-        <Footer />
       </div>
 
   )
