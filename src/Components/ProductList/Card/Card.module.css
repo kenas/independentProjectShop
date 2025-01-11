@@ -1,0 +1,26 @@
+/* .cardContainer {
+    width: 360px;
+    padding: 0rem 1rem;
+    transition: transform 0.5s ease-in-out;
+} */
+.cardContainer {
+    min-width: 25%; /* Ensure each card takes up the correct width */
+    box-sizing: border-box;
+    padding: 0 1rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+.cardContainer:hover {
+    transform: scale(1.05);
+}
+
+.cardContainer img {
+    background-color: var(--geyForHeader);
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.cardContainer p {
+    padding: 2rem 0rem;
+}

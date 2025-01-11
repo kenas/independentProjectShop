@@ -1,9 +1,21 @@
+
 import Header  from "../Header/Header";
-const Content = ({pictures}) => {
+import ProductList from '../ProductList/ProductList';
+
+
+//CSS
+import styles from './Content.module.css';
+
+
+const Content = ({pictures, products}) => {
+
     return (
         <>
         <Header pictures={pictures}/>
-        <p>Contnet</p>
+        <section className={styles.content}>
+            <ProductList />
+        </section>
+
         </>
     )
 }

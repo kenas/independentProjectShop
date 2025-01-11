@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 5rem;
+}
+
+footer.section, .categories {
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer.section, .categories h5{
+    color: var(--accentColor);
+}
+
+footer.section, li {
+    list-style: none;
+    padding: 1rem 0rem;
+}
+
+footer.section, .categories li a {
+    text-decoration: none;
+    color: var(--accentColor);
+}
+
+footer.section, .categories li a:hover {
+    text-decoration: underline;
+    color: var(--accentColor);
+}
+
+footer.section, .payMethods ul {
+    display: flex;
+}

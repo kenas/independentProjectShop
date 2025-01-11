@@ -1,0 +1,33 @@
+/* .containerProducts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;  
+    transition: transform 1s ease-in-out;  
+}
+
+.test {
+    transition: transform 1s ease-in-out;   
+} */
+
+.containerProducts {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    display: flex;
+    width: max-content; /* Prevents wrapping */
+    transition: transform 0.5s ease-in-out;
+}
+
+.arrowLeft, .arrowRight {
+    z-index: 2;
+    cursor: pointer;
+}
+
